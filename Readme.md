@@ -11,7 +11,7 @@ Cada usuário poderá ficar com o livro por 2 semanas.
 Doc
 Nome de todos os integrante do grupo;,
 
-Roberto Nascimento - Classe Usuario
-Alexandre Carvalho - Classe BibliotecaVirtual
-Bianca Leal - Classe Livro
-Thiago Augusto - Classe Applucation - Teste das classes
+- Roberto Nascimento - Classe Usuario
+- Alexandre Carvalho - Classe BibliotecaVirtual
+- Bianca Leal - Classe Livro
+- Thiago Augusto - Classe Applucation - Teste das classes
