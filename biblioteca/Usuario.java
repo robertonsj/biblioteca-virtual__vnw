@@ -48,7 +48,10 @@ public class Usuario {
 		this.telefone = telefone;
 	}
 	
-	
+	public String toString() {
+		return String.format("Nome - [%s] CPF - [%s] Email - [%s] Telefone - [%s]",
+				nome, cpf, email, telefone);
+	}
 	
 	
 }
