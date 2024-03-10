@@ -1,18 +1,19 @@
 package challange.livrousuario.biblioteca;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Usuario {	
 	private String nome;
 	private String cpf;
-	private String email;
 	private String telefone;
+	private List<Emprestimo> historicoEmprestimos = new ArrayList<>();
 	
 	public Usuario() {}
 	
-	public Usuario(String nome, String cpf, String email, String telefone) {
+	public Usuario(String nome, String cpf, String telefone) {
 		super();
 		this.nome = nome;
 		this.cpf = cpf;
-		this.email = email;
 		this.telefone = telefone;
 	}
 
@@ -32,14 +33,6 @@ public class Usuario {
 		this.cpf = cpf;
 	}
 
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
 	public String getTelefone() {
 		return telefone;
 	}
@@ -49,8 +42,8 @@ public class Usuario {
 	}
 	
 	public String toString() {
-		return String.format("Nome - [%s] CPF - [%s] Email - [%s] Telefone - [%s]",
-				nome, cpf, email, telefone);
+		return String.format("Nome-[%s] CPF-[%s] Telefone-[%s]",
+				nome, cpf, telefone);
 	}
 	
 	
