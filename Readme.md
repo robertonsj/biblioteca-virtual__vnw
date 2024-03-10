@@ -2,7 +2,7 @@
 ### Escopo de Projeto
 
 #### 1. Cadastro de Livros
-- Permitir o cadastro de informações sobre cada livro, como título, autor, isbn, ano de publicacao, e número de cópias disponíveis.
+- Permitir o cadastro de informações sobre cada livro, como título, autor, editora, ano de publicacao, e número de cópias disponíveis.
 - Possibilitar a atualização e exclusão de registro de livros.
   
 #### 2. Controle de Empréstimos:
@@ -19,7 +19,7 @@
 
 ### Entidades
 1. Livro(titulo, autor, isbn, anoPublicacao, numeroDeCopias);
-2. Usuario(nome, contato, email, cpf, historicoEmprestimos);
+2. Usuario(nome, contato, cpf, historicoEmprestimos);
 3. Emprestimos(livro, usuario, dataEmprestimo, dataDevolucao);
 4. Biblioteca(livros, usuarios, emprestismos)
 
@@ -30,7 +30,7 @@ Usuários não cadastrados não podem alugar livros.
 Cada usuário poderá ficar com o livro por 2 semanas.
 
 ### Diagrama de Classes
-![Imagem do diagrama](https://lucid.app/publicSegments/view/c5866199-5dba-4729-b838-98a03303c55e/image.png)
+![Imagem do diagrama](https://lucid.app/publicSegments/view/f668dfdf-d012-4f7d-9207-da3ef1b21316/image.png)
 
 ### Componentes do Grupo
 - Roberto Nascimento - Classe Usuario
