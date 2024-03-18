@@ -1,20 +1,19 @@
 package challange.livrousuario.biblioteca;
-import java.util.List;
-import java.util.ArrayList;
 
-public class Usuario {	
+import java.util.ArrayList;
+import java.util.List;
+
+public class Usuario {
 	private String nome;
 	private String cpf;
 	private String telefone;
-	private List<Emprestimo> historicoEmprestimos = new ArrayList<>();
-	
-	public Usuario() {}
-	
+	private List<Livro> livrosEmprestados;
+
 	public Usuario(String nome, String cpf, String telefone) {
-		super();
 		this.nome = nome;
 		this.cpf = cpf;
 		this.telefone = telefone;
+		this.livrosEmprestados = new ArrayList<>();
 	}
 
 	public String getNome() {
@@ -40,11 +39,26 @@ public class Usuario {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-	
-	public String toString() {
-		return String.format("Nome-[%s] CPF-[%s] Telefone-[%s]",
-				nome, cpf, telefone);
+
+	public List<Livro> getLivrosEmprestados() {
+		return livrosEmprestados;
 	}
-	
-	
+
+	public void setLivrosEmprestados(List<Livro> livrosEmprestados) {
+		this.livrosEmprestados = livrosEmprestados;
+	}
+
+	public void adicionarLivroEmprestado(Livro livro) {
+		livrosEmprestados.add(livro);
+	}
+
+	public boolean removerLivroEmprestado(Livro livro) {
+		return livrosEmprestados.remove(livro);
+	}
+
+	@Override
+	public String toString() {
+		return "Nome: " + nome + ", CPF: " + cpf + ", Telefone: " + telefone;
+	}
+
 }
